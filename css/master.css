@@ -1,4 +1,9 @@
-h1,h3,h4,p{
+body{
+  background: -moz-linear-gradient(-45deg, rgba(244,245,252,1) 0%, rgba(216,219,242,1) 47%, rgba(184,190,232,1) 100%);
+  background: -webkit-linear-gradient(-45deg, rgba(244,245,252,1) 0%,rgba(216,219,242,1) 47%,rgba(184,190,232,1) 100%);
+  background: linear-gradient(135deg, rgba(244,245,252,1) 0%,rgba(216,219,242,1) 47%,rgba(184,190,232,1) 100%);
+}
+h1,h3,h4,p,label{
   font-family: 'Sriracha', cursive;
 }
 main{
@@ -163,14 +168,21 @@ footer {
     vertical-align: top;
   }
   @keyframes agrandar {
-      from {min-width: 5%;}
-      to {min-width: 85%;}
+    0%{min-width: 5%; opacity: 0;}
+    20%{min-width: 15%;}
+    40%{min-width: 35%;}
+    60%{min-width: 55%;}
+    70%{min-width: 65%;opacity: 0.25;}
+    100%{min-width: 85%; opacity: 1;}
+    /* Para ocultar el efecto mientras se adaptan los bloques */
+      /* from {min-width: 5%; }
+      to {min-width: 85%;} */
   }
   @keyframes disminuir {
       from {min-width: 85%;}
       to {min-width: 5%;}
   }
-  .selected{
+  .selected, .selected > article{
     -webkit-animation: agrandar 1s ;
     animation: agrandar 1s ease;
     animation-fill-mode: forwards;
@@ -179,10 +191,10 @@ footer {
     -webkit-animation: disminuir 1s ;
     animation: disminuir 1s ease;
     animation-fill-mode: forwards;
-    -webkit-box-shadow: inset 2px 0px 15px 2px rgba(0,0,0,0.26);
-    -moz-box-shadow: inset 2px 0px 15px 2px rgba(0,0,0,0.26);
-    box-shadow: inset 2px 0px 15px 2px rgba(0,0,0,0.26);
-    opacity: 0.6;
+    -webkit-box-shadow: inset 3px 0px 10px 0px rgba(0,0,0,0.46);
+    -moz-box-shadow: inset 3px 0px 10px 0px rgba(0,0,0,0.46);
+    box-shadow: inset 3px 0px 10px 0px rgba(0,0,0,0.46);
+    opacity: 0.8;
   }
   .deselected:hover{
     opacity: 1;
@@ -227,7 +239,7 @@ footer {
   .tecnology-images{
     display: inline-block;
     vertical-align: top;
-    margin-top: 8.5rem;
+    margin-top: 6rem;
   }
   .content-image{
     display: grid;
