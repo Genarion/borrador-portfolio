@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Mario Ferrer Nieto</title>
+    <link href="https://fonts.googleapis.com/css?family=Sriracha" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/master.css">
+    <script src="js/jquery-3.2.1.js" charset="utf-8"></script>
+    <script src="js/code.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+    <header>
+      <h1>Makenf_Dev</h1>
+    </header>
+
+    <main class="sombra">
+
+        <section id="whoami" class="selected">
+          <article>
+            <h3>¿Quien soy?</h3>
+            <img src="img/avatar.jpg" alt="imagen Mario Ferrer Nieto">
+            <p>¡Muy Buenas! Mi nombre es Mario y soy desarrollador de aplicaciones multiplataforma y web. En el apartado de proyectos podreis ver lo ultimo con lo que estoy liado. Casi siempre me gustan mas las tecnologías referidas a lado servidor o aplicaciones nativas tanto en .net como java multiplataforma.</p>
+          </article>
+        </section>
+
+        <section id="tecnology" class="deselected">
+          <article>
+            <h3>Tecnologías</h3>
+            <img src="img/tecnology.jpg" alt="imagen tecnologia programacion">
+            <div class="tecnologias">
+              <div class="backend">
+                <h4>Backend</h4>
+                <ul>
+                  <li>Java</li>
+                  <li>Ruby</li>
+                  <li>PHP</li>
+                  <li>MongoDB</li>
+                  <li>MariaDB</li>
+                </ul>
+              </div>
+              <div class="frontend">
+                <h4>Frontend</h4>
+                <ul>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>Javascript</li>
+                  <li>Vue.js</li>
+                  <li>Angular</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tecnology-images">
+              <div class="content-image">
+                <img src="img/java.png" alt="java">
+                <img src="img/php.png" alt="php">
+                <img src="img/ruby.png" alt="ruby">
+                <img src="img/vue.png" alt="vue">
+                <img src="img/angular.png" alt="angular">
+                <img src="img/mongodb.png" alt="mongodb">
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section id="proyects" class="deselected">
+          <article>
+            <h3>Proyectos</h3>
+            <div class="posts">
+              <article>
+                <img src="img/default.jpg" alt="">
+                <h4>EventDay</h4>
+                <p>Proyecto desarrollado en Android para gestionar eventos, con la posibilidad de agregar o ver los eventos y mostrarlos en un mapa, buscando incluso los mas cercanos a tu localización.</p>
+              </article>
+              <article>
+                <img src="img/default.jpg" alt="">
+                <h4>Mastermind</h4>
+                <p>Proyecto de clase desarrollado en Javascript, basado en el clásico juego mastermind donde tienes que acertar la combinación de colores de 4 bolas.</p>
+              </article>
+              <article>
+                <img src="img/default.jpg" alt="">
+                <h4>GestionTienda</h4>
+                <p>Proyecto desarrollado en java para llevar un registro del almacen y vender productos.</p>
+              </article>
+              <article>
+                <img src="img/default.jpg" alt="">
+                <h4>Hibernate</h4>
+                <p>Proyecto desarrollado en java para clase, probando hibernate y todo su pontencial.</p>
+              </article>
+            </div>
+          </article>
+        </section>
+
+        <section id="contact" class="deselected">
+          <article>
+                <h3>Contacto</h3>
+                <form action="#" id="form_contacto">
+                    <label for="nombre">Nombre (*)</label>
+                    <input type="text" name="nombre" id="nombre" >
+                    <label for="email">Email (*)</label>
+                    <input type="email" name="email" id="email">
+                    <label for="asunto">Asunto</label>
+                    <input type="text" name="asunto" id="asunto">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                    <input type="button" name="enviar" id="enviar" value="ENVIAR">
+                </form>
+            </article>
+        </section>
+
+
+    </main>
+
+    <footer>
+      <div id="social-networks">
+          <a href="https://www.facebook.com/">
+            <picture>
+              <source srcset="icon/ico_facebook_m.png" media="(min-width: 650px)">
+              <img srcset="icon/ico_facebook_s.png" alt="Facebook">
+            </picture>
+          </a>
+          <a href="https://github.com/Genarion">
+            <picture>
+              <source srcset="icon/ico_github_m.png" media="(min-width: 650px)">
+              <img srcset="icon/ico_github_s.png" alt="Github">
+            </picture>
+          </a>
+          <a href="https://twitter.com/Makenf_Dev">
+            <picture>
+              <source srcset="icon/ico_twitter_m.png" media="(min-width: 650px)">
+              <img srcset="icon/ico_twitter_s.png" alt="Twitter">
+            </picture>
+          </a>
+          <a href="https://www.linkedin.com/in/marioferrernieto/">
+            <picture>
+              <source srcset="icon/ico_linkedin_m.png" media="(min-width: 650px)">
+              <img srcset="icon/ico_linkedin_s.png" alt="LinkedIn">
+            </picture>
+          </a>
+      </div>
+  </footer>
+
+  </body>
+</html>

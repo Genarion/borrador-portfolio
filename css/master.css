@@ -1,0 +1,301 @@
+h1,h3,h4,p{
+  font-family: 'Sriracha', cursive;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF;
+}
+header{
+  background-color: #000;
+  padding: 20px;
+}
+header h1{
+  text-align: center;
+  color: #FFF;
+  margin: 0;
+}
+
+section{
+  height: 20%;
+  min-width: 5%;
+  vertical-align: top;
+}
+article h3 {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+#whoami{
+  background-color: rgba(209, 164, 164, 1);
+}
+#whoami img{
+  width: 40%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  -webkit-box-shadow: 2px 2px 6px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 2px 6px -1px rgba(0,0,0,0.75);
+  box-shadow: 2px 2px 6px -1px rgba(0,0,0,0.75)
+}
+#whoami p{
+  text-align: justify;
+}
+#tecnology{
+  background-color: rgb(182, 203, 158);
+}
+.tecnologias{
+  display: flex;
+  justify-content: space-around;
+}
+.tecnologias ul{
+  list-style-type: none;
+}
+#tecnology > article > img{
+  width: 50%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  -moz-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+#proyects{
+  background-color: rgba(169, 186, 192, 0.6);
+}
+
+.posts{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4,1fr);
+  grid-gap: 2.5rem 2.5rem;
+}
+.posts article{
+  box-shadow: 0px 0px 9px 1px rgba(171,171,171,0.74);
+}
+.posts article img{
+  width: 100%;
+  opacity: 0.8;
+}
+.posts article h4{
+  font-size: 1.2em;
+  margin-left: 0.7rem;
+}
+.posts article p{
+  word-wrap: break-word;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+#contact{
+  background-color: rgb(180, 180, 180);
+}
+#form_contacto {
+  width: 90%;
+  margin: auto;
+  background: transparent;
+  font-size: 1em;
+  line-height: 19px;
+}
+#form_contacto * {
+  width: 100%;
+}
+#form_contacto input,
+#form_contacto textarea {
+  background-color: #e1e1e1;
+  max-width: 100%;
+  border: 0;
+  font-size: 1.1em;
+  padding: 10px 0;
+  margin-bottom: 5px;
+  margin-top: 2px;
+}
+#form_contacto textarea {
+  max-height: 300px;
+}
+#form_contacto #enviar {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+#form_contacto input[type=button]:active {
+  background-color: rgba(165,172,177,0.91);
+}
+
+footer {
+  max-width: 100%;
+  background-color: #000;
+  padding: 25px;
+}
+#social-networks {
+  width: 65%;
+  margin: auto;
+  background-size: 100% 100%;
+  text-align: center;
+}
+#social-networks  a {
+  text-decoration: none;
+}
+.tecnology-images{
+  display: none;
+}
+
+
+@media screen and (min-width: 769px) {
+  main{
+    -webkit-box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    -moz-box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 5vh auto;
+  }
+  section{
+    height: 70vh;
+    min-width: 5%;
+    vertical-align: top;
+  }
+  @keyframes agrandar {
+      from {min-width: 5%;}
+      to {min-width: 85%;}
+  }
+  @keyframes disminuir {
+      from {min-width: 85%;}
+      to {min-width: 5%;}
+  }
+  .selected{
+    -webkit-animation: agrandar 1s ;
+    animation: agrandar 1s ease;
+    animation-fill-mode: forwards;
+  }
+  .deselected{
+    -webkit-animation: disminuir 1s ;
+    animation: disminuir 1s ease;
+    animation-fill-mode: forwards;
+    -webkit-box-shadow: inset 2px 0px 15px 2px rgba(0,0,0,0.26);
+    -moz-box-shadow: inset 2px 0px 15px 2px rgba(0,0,0,0.26);
+    box-shadow: inset 2px 0px 15px 2px rgba(0,0,0,0.26);
+    opacity: 0.6;
+  }
+  .deselected:hover{
+    opacity: 1;
+  }
+  .deselected article{
+    display: none;
+  }
+
+  #whoami img{
+    width: 30%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 3px;
+    -webkit-box-shadow: 2px 2px 6px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 6px -1px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 6px -1px rgba(0,0,0,0.75);
+    margin-top: 30px;
+  }
+  #whoami p{
+    text-align: justify;
+    width: 35%;
+    margin: 30px auto;
+  }
+
+  .tecnologias{
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+    margin-top: 6rem;
+  }
+  .tecnologias ul{
+    list-style-type: none;
+  }
+  #tecnology > article > img{
+    width: 32%;
+    display: inline-block;
+    margin: 6rem 4rem;
+    border-radius: 3px;
+
+  }
+  .tecnology-images{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 8.5rem;
+  }
+  .content-image{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(2,100px);
+  }
+  .tecnology-images > .content-image > img{
+    width: 100px;
+    height: auto;
+  }
+  .posts{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+  }
+  .posts > article{
+    width: 16vw;
+    height: 50vh;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+  .posts > article:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  .posts > article > h4{
+    font-size: 1.4rem;
+  }
+  .posts > article > p{
+    font-size: 1.04rem;
+  }
+
+
+  .sombra
+  {
+    position: relative;
+  }
+  .sombra:before, .sombra:after
+  {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+    max-width:300px;
+    background: #777;
+    -webkit-box-shadow: 0 15px 10px #777;
+    -moz-box-shadow: 0 15px 10px #777;
+    box-shadow: 0 15px 10px #777;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+  }
+  .sombra:after
+  {
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    transform: rotate(3deg);
+    right: 10px;
+    left: auto;
+  }
+  footer{
+    margin-top: 3.3%;
+  }
+}
