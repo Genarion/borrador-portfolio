@@ -9,7 +9,9 @@ h1,h3,h4,p,label{
 main{
   display: flex;
   flex-direction: column;
-  background-color: #FFF;
+  background: -moz-linear-gradient(-45deg, rgba(244,245,252,1) 0%, rgba(216,219,242,1) 47%, rgba(184,190,232,1) 100%);
+  background: -webkit-linear-gradient(-45deg, rgba(244,245,252,1) 0%,rgba(216,219,242,1) 47%,rgba(184,190,232,1) 100%);
+  background: linear-gradient(135deg, rgba(244,245,252,1) 0%,rgba(216,219,242,1) 47%,rgba(184,190,232,1) 100%);
 }
 header{
   background-color: #000;
