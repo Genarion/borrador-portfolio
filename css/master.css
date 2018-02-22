@@ -47,6 +47,7 @@ article h3 {
 }
 #whoami p{
   text-align: justify;
+  margin: 15px 5px;
 }
 #tecnology{
   background-color: rgb(182, 203, 158);
