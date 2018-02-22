@@ -116,6 +116,7 @@ article h3 {
 }
 #form_contacto textarea {
   max-height: 300px;
+  height: 9vh;
 }
 #form_contacto #enviar {
   font-size: 0.8em;
@@ -191,7 +192,7 @@ footer {
   }
 
   #whoami img{
-    width: 30%;
+    width: 15vw;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -217,7 +218,7 @@ footer {
     list-style-type: none;
   }
   #tecnology > article > img{
-    width: 32%;
+    width: 15vw;
     display: inline-block;
     margin: 6rem 4rem;
     border-radius: 3px;
@@ -230,11 +231,11 @@ footer {
   }
   .content-image{
     display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-template-rows: repeat(2,100px);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,1fr);
   }
   .tecnology-images > .content-image > img{
-    width: 100px;
+    width: 8vw;
     height: auto;
   }
   .posts{
@@ -257,7 +258,7 @@ footer {
     font-size: 1.4rem;
   }
   .posts > article > p{
-    font-size: 1.04rem;
+    font-size: 1.84vh;
   }
 
 
